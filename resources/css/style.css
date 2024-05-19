@@ -16,6 +16,20 @@ body {
     color: rgb(17, 214, 10);
 }
 
+.btn-destroy{
+    width: 100px;
+    background-color: #cf2c21;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-destroy:hover{
+    background-color: #a5231a;
+}
+
 /* NAVBAR */
 
 .navbar {
@@ -97,6 +111,10 @@ body {
     padding: 50px 20px;
     color: var(--primary-color);
     text-align: center;
+}
+
+.hero img{
+    width: 500px;
 }
 
 /* FOOTER */
@@ -189,4 +207,97 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* TICKET-FORM */
+
+.ticket-form {
+    width: 600px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #aaa;
+}
+
+.ticket-form h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.ticket-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.ticket-form button:hover {
+    background-color: var(--hover-color);
+}
+
+/* TICKET-TABLE */
+
+.table-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.ticket-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ticket-table th,
+.ticket-table td {
+    padding: 12px 15px;
+}
+
+.ticket-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.ticket-table tbody td a{
+    margin: 6px;
+}
+
+.ticket-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.ticket-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.ticket-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
 }
